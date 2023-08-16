@@ -18,7 +18,7 @@
     </organization>
 
     <properties>
-        <spring-boot>2.7.10-SNAPSHOT</spring-boot>
+        <spring-boot>2.7.15-SNAPSHOT</spring-boot>
         <spring-data-ultipa>1.0.0-SNAPSHOT</spring-data-ultipa>
     </properties>
 
@@ -54,5 +54,22 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <repositories>
+        <repository>
+            <id>spring-snapshot</id>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+        <repository>
+            <id>spring-milestone</id>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+    </repositories>
 
 </project>
