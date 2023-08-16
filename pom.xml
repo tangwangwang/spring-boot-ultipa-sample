@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-ultipa-sample</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>Spring Boot Ultipa Sample</name>
+    <description>Starter sample for using Spring Data Ultipa</description>
+    <url>https://ultipa.com/projects/spring-boot-ultipa</url>
+    <inceptionYear>2022</inceptionYear>
+    <organization>
+        <name>Ultipa, next-generation graph database</name>
+        <url>https://ultipa.com</url>
+    </organization>
+
+    <properties>
+        <spring-boot>2.7.10-SNAPSHOT</spring-boot>
+        <spring-data-ultipa>1.0.0-SNAPSHOT</spring-data-ultipa>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-ultipa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-ultipa</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
