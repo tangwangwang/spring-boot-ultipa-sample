@@ -39,3 +39,6 @@ build/
 .flattened-pom.xml
 dependency-reduced-pom.xml
 .gradle
+
+### Profile ###
+**/resources/application-local.yml

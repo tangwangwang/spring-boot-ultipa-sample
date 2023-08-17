@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: local
+  data:
+    ultipa:
+      hosts: localhost:60010
+      username: root
+      password: root
+      default-graph: default
+
