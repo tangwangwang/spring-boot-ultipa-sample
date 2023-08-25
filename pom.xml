@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ultipa</groupId>
+    <groupId>com.tangwangwang</groupId>
     <artifactId>spring-boot-ultipa-sample</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
@@ -29,7 +29,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.ultipa</groupId>
+            <groupId>com.tangwangwang</groupId>
             <artifactId>spring-boot-starter-data-ultipa</artifactId>
         </dependency>
 
@@ -58,7 +58,7 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>com.ultipa</groupId>
+                <groupId>com.tangwangwang</groupId>
                 <artifactId>spring-boot-starter-data-ultipa</artifactId>
                 <version>${project.version}</version>
             </dependency>
